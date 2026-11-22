@@ -1,0 +1,19 @@
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#030303}
+body{display:flex;justify-content:center;align-items:flex-start;overflow-x:hidden}
+.screen{position:relative;width:min(100vw,1536px);line-height:0;background:#030303}
+.dashboard{display:block;width:100%;height:auto;user-select:none;-webkit-user-drag:none}
+.hotspots{position:absolute;inset:0;pointer-events:none}
+.hotspot{position:absolute;display:block;padding:0;border:0;background:transparent;pointer-events:auto;cursor:pointer}
+.hotspot:focus-visible{outline:2px solid #e9edef;outline-offset:1px;background:#ffffff12}
+.home{left:1.0%;top:26.5%;width:11.3%;height:6.6%}
+.wallet{left:1.0%;top:33.1%;width:11.3%;height:6.0%}
+.analytics{left:1.0%;top:39.0%;width:11.3%;height:6.0%}
+.transactions{left:1.0%;top:45.0%;width:11.3%;height:6.0%}
+.staking{left:1.0%;top:51.0%;width:11.3%;height:6.0%}
+.settings{left:1.0%;top:57.0%;width:11.3%;height:6.0%}
+.profile{left:1.0%;top:63.0%;width:11.3%;height:6.0%}
+.logout{left:1.0%;top:69.0%;width:11.3%;height:6.0%}
+.notice{position:fixed;left:50%;bottom:20px;transform:translate(-50%,12px);padding:10px 16px;border:1px solid #aeb5ba66;border-radius:7px;background:#08090bed;color:#f0f2f3;font:13px Arial,sans-serif;line-height:1.4;opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;max-width:min(90vw,420px);text-align:center;z-index:5}
+.notice.show{opacity:1;transform:translate(-50%,0)}
+@media(min-width:1537px){.screen{width:1536px}}
